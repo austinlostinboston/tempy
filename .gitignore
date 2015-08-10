@@ -1,6 +1,7 @@
 # Ignore my html files
 *.html
 *.DS_Store
+production/static/*
 
 # But don't ignore these files!!
 !modules/exampleHeader.html
