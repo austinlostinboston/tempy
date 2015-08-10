@@ -10,6 +10,7 @@ Description: A simple script to help manage html files
 
 import os
 import re
+import sys
 
 class tempy(object):
     def __init__(self):
@@ -51,7 +52,14 @@ class tempy(object):
 
             for part in replacers:
                 print "Replacing " + part + " in " + f
-                template = template.replace("[[[" + str(part) + "]]]", self.modules[str(part)])
+                try:
+                    template = template.replace("[[[" + str(part) + "]]]", self.modules[str(part)])
+                except KeyError:
+                    print "Could not find module named -> " + str(part)
+                    sys.exit(0)
+                except:
+                    print "Ran into unexpected problem. Stopping tempy."
+                    sys.exit(0)
 
         new_template = template
 
