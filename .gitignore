@@ -1,8 +1,9 @@
 # Ignore my html files
 *.html
+*.DS_Store
 
 # But don't ignore these files!!
-!./modules/exampleHeader.html
-!./modules/exampleFooter.html
-!./templates/exampleTemplate.html
-!./production/exampleTemplate.html
+!modules/exampleHeader.html
+!modules/exampleFooter.html
+!templates/exampleTemplate.html
+!production/exampleTemplate.html
