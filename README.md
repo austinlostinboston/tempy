@@ -1,6 +1,6 @@
 # tempy
 
-Tempy is a simple, single file python script which makes it easy to modularize html files for static web pages. This makes it easier to edit content which is displayed on more than one page in a sight like a header or footer.
+Tempy is a simple, single file python script which makes it easy to modularize html files for static web pages. This makes it easier to edit content which is displayed on more than one page in a site like a header or footer.
 
 ## Setup
 
